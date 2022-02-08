@@ -214,9 +214,63 @@ html {
     margin-top: -2px;
 }
 
-.ticket-list-quantity {
-    list-style: none;
+.list-place {
+    overflow: hidden;
+    margin: 32px -8px 0;
+    padding-bottom: 48px;
 }
+
+.list-place .place-item{
+   float: left;
+   width: 33.33333%;
+   padding: 0 8px;
+}
+
+.list-place .place-body {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.list-place .place-img {
+    width: 100%;  
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.list-place .ticket-name {
+    font-size: 15px;
+}
+
+.list-place .ticket-date {
+    margin: 15px 0;
+    color: #757575;
+}
+
+.list-place .ticket-description {
+    margin: 15px 0;
+    line-height: 1.4;
+}
+
+
+.list-place .place-buy-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    color: #fff;
+    background-color: #000;
+    height: 38px;
+    width: 108px;
+    text-decoration: none;
+}
+
+.list-place .place-buy-btn:hover {
+    color: #000;
+    background-color: #ccc;
+} 
 
 #footer {
 
