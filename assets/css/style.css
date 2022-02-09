@@ -15,14 +15,84 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*  Common */
+.text-white {
+    color: #fff !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.clear {
+    overflow: hidden;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    color: #fff;
+    background-color: #000;
+    height: 38px;
+    width: 108px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #ccc;
+} 
+
+.pull-right {
+    float: right;
+}
+/* Main */
 #main {
 
 }
 
-.text-white {
-    color: #fff !important;
-}
-#nav, .subnav {
+#nav, 
+.subnav {
     list-style: none;
 }
 
@@ -158,18 +228,12 @@ html {
 }
 
 #content .member-list {
-    margin-top: 48px;
-    overflow: hidden;
-}
-
-#content .member-item {
-    float: left;
-    width: 33.33333%;
-    text-align: center;
+    margin-top: 48px;    
 }
 
 #content .member-name {
     font-size: 15px;
+    
 }
 
 #content .member-image {
@@ -214,25 +278,18 @@ html {
     margin-top: -2px;
 }
 
-.list-place {
-    overflow: hidden;
-    margin: 32px -8px 0;
-    padding-bottom: 48px;
+.place-list {
+    margin-top: 32px;
+    margin-bottom: 48px;
 }
 
-.list-place .place-item{
-   float: left;
-   width: 33.33333%;
-   padding: 0 8px;
-}
-
-.list-place .place-body {
+.place-body {
     background-color: #fff;
     padding: 16px;
     font-size: 15px;
 }
 
-.list-place .place-img {
+.place-img {
     width: 100%;  
     display: block;
 }
@@ -241,37 +298,58 @@ html {
     opacity: 0.6;
 }
 
-.list-place .ticket-name {
+.ticket-name {
     font-size: 15px;
 }
 
-.list-place .ticket-date {
+.ticket-date {
     margin: 15px 0;
     color: #757575;
 }
 
-.list-place .ticket-description {
+.ticket-description {
     margin: 15px 0;
     line-height: 1.4;
 }
 
 
-.list-place .place-buy-btn {
-    display: inline-block;
-    padding: 8px 16px;
-    margin-bottom: 16px;
-    color: #fff;
-    background-color: #000;
-    height: 38px;
-    width: 108px;
-    text-decoration: none;
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;   /* Gian chu */
 }
 
-.list-place .place-buy-btn:hover {
-    color: #000;
-    background-color: #ccc;
-} 
+.contact-content {
+    padding-top: 47px;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* Map section */
+.map-section img{
+    width: 100%;
+}
 
 #footer {
+    padding: 64px 16px;
+    opacity: 0.7;
+    color: #000;
+    
+}
+
+#footer .footer-content {
+    margin: 15px;
 
 }

@@ -48,16 +48,16 @@
                 <p class="about-text">
                     We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
-                <div class="member-list">
-                    <div class="member-item">
+                <div class="row member-list">
+                    <div class="col col-third text-center">
                         <p class="member-name">Name</p>
                         <img class="member-image" src="./assets/img/bandmember.jpg" alt="bandmember">
                     </div>
-                    <div class="member-item">
+                    <div class="col col-third text-center">
                         <p class="member-name">Name</p>
                         <img class="member-image" src="./assets/img/bandmember.jpg" alt="bandmember">
                     </div>
-                    <div class="member-item">
+                    <div class="col col-third text-center">
                         <p class="member-name">Name</p>
                         <img class="member-image" src="./assets/img/bandmember.jpg" alt="bandmember">
                     </div>
@@ -75,32 +75,32 @@
                         <li>November <span class="quantity">3</span></li>
                     </ul>
 
-                    <div class="list-place">
-                        <div class="place-item">
+                    <div class="row place-list">
+                        <div class="col col-third">
                             <img src="./assets/img/newyork-ticket.jpg" alt="newyork-ticket" class="place-img">
                             <div class="place-body">
                                 <h3 class="ticket-name">New York</h3>
                                 <p class="ticket-date">Fri 27 Nov 2016</p>
                                 <p class="ticket-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a class="place-buy-btn" href="#">Buy tickets</a>
+                                <a class="btn" href="#">Buy tickets</a>
                             </div>
                         </div>
-                        <div class="place-item">
+                        <div class="col col-third">
                             <img src="./assets/img/paris-ticket.jpg" alt="paris-ticket" class="place-img">
                             <div class="place-body">
                                 <h3 class="ticket-name">Paris</h3>
                                 <p class="ticket-date">Sat 28 Nov 2016</p>
                                 <p class="ticket-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a class="place-buy-btn" href="#">Buy tickets</a>
+                                <a class="btn" href="#">Buy tickets</a>
                             </div>
                         </div>
-                        <div class="place-item">
+                        <div class="col col-third">
                             <img src="./assets/img/sanfran-ticket.jpg" alt="sanfran-ticket" class="place-img">
                             <div class="place-body">
                                 <h3 class="ticket-name">San Francisco</h3>
                                 <p class="ticket-date">Sun 29 Nov 2016</p>
                                 <p class="ticket-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a class="place-buy-btn" href="#">Buy tickets</a>
+                                <a class="btn" href="#">Buy tickets</a>
                             </div>
                         </div>
                     </div>
@@ -111,12 +111,48 @@
             <div class="content-section">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
-
+                <div class="row contact-content">
+                    <div class="col col-half contact-info">
+                        <p><i class="ti-location-pin"></i>Chicago, US</p>
+                        <p><i class="ti-mobile"></i>Phone: +00 151515</p>
+                        <p><i class="ti-email"></i>Email: mail@mail.com</p>
+                    </div>
+                    <div class="col col-half contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half">
+                                    <input type="text" name="" placeholder="Name" id="" required class="form-control">
+                                </div>
+                                <div class="col col-half">
+                                    <input type="email" name="" placeholder="Email" id="" required class="form-control">
+                                </div>
+                            </div>
+                                <div class="row mt-8">
+                                    <div class="col col-full">
+                                        <input type="text" name="" placeholder="Message" id="" required class="form-control">
+                                    </div>
+                                </div>
+                            <input class="btn pull-right mt-16" type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="map-section">
+                <img src="./assets/img/map.jpg" alt="">
             </div>
         </div>
 
-        <div id="footer">
-
+        <div id="footer" class="text-center footer">
+            <div>
+                <i class="ti-facebook"></i>
+                <i><i class="ti-instagram"></i>
+                <i class="ti-pinterest"></i>
+                <i class="ti-twitter"></i>
+                <i class="ti-linkedin"></i>
+                <i class="ti-google"></i>
+            </div>
+            <div class="footer-content">Powered by <a href="">w3.css</a></div>
         </div> 
     </div>
 </body>
