@@ -18,7 +18,7 @@
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         More
                         <i class="ti-angle-down"></i>
                     </a>
@@ -239,8 +239,13 @@
 
     var menuItems = document.querySelectorAll('#nav li a[href*="#"');
     for (const menuItem of menuItems) {
-        menuItem.addEventListener('click', () => {
-            header.style.height = null;
+        menuItem.addEventListener('click', (event) => {
+            var isParentMenu = menuItem.nextElementSibling && menuItem.nextElementSibling.classList.contains('subnav');
+            if (isParentMenu) {
+                event.preventDefault();
+            } else {
+                header.style.height = null;
+            }
         });
     }
 </script>

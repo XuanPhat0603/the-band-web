@@ -10,6 +10,19 @@
 
 /* Mobile */
 @media (max-width: 740px) {
+    
+    #header {
+        overflow: hidden;
+    }
+
+    #header .mobile-menu-btn {
+        display: block;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
+
     #nav {
         display: block;
     }
@@ -22,16 +35,13 @@
         display: inline-block;
     }
 
-    #header {
-        /* height: auto; */
-        
+    #nav .subnav {
+        position: initial;
     }
-
-    #header .mobile-menu-btn {
-        display: block;
-    }
-
-    #header .search-btn {
-        display: none;
+    
+    #nav .subnav a {
+        color: #fff;
+        padding: 6px 40px;
+        background-color: #333;
     }
 }
